@@ -43,7 +43,8 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                     # TASK 3: Add a slider to select payload range
                     #dcc.RangeSlider(id='payload-slider',...)				
 				    # dcc.RangeSlider(min=min_value, max=max_value, step=1, value=[min_value, max_value], id='payload-slider'),
-				    dcc.RangeSlider(id='payload-slider', min=0, max=10000, step=1000, marks={0: '0', 100: '100'}, value=[min_value, max_value]),
+				    # dcc.RangeSlider(id='payload-slider', min=0, max=10000, step=1000, marks={0: '0', 100: '100'}, value=[min_value, max_value]),
+                    dcc.RangeSlider(id='payload-slider', min=0, max=10000, step=1000, value=[min_value, max_value]),
 				    html.Br(),
 
                     # TASK 4: Add a scatter chart to show the correlation between payload and launch success
